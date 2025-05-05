@@ -1,3 +1,6 @@
+@localhost=locahost:4004/odata/v4/main
+
+
 GET http://localhost:4004/odata/v4/main/SalesOrderHeaders
 Content-Type: application/json
 
@@ -22,4 +25,6 @@ Content-Type: application/json
 PUT http://localhost:4004/odata/v4/main/SalesOrderHeaders(id=3410db6d-759a-49c5-a49f-2b6a4ba70fc5)
 Content-Type: application/json
 
-{}
+{
+    "modifiedBy": 
+}
