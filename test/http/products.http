@@ -29,5 +29,5 @@ PATCH http://localhost:4004/odata/v4/main/Products(id={{id}})
 Content-Type: application/json
 
 {
-    "name": "agua"
+    "name": "agua "
 }

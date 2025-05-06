@@ -55,3 +55,10 @@ Content-Type: application/json
     "modifiedBy": 
 }
 
+###
+
+
+#Expandindo os Items
+
+GET http://localhost:4004/odata/v4/main/SalesOrderHeaders?$expand=items,customer
+Content-Type: application/json
