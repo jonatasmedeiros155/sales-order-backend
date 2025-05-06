@@ -62,3 +62,12 @@ Content-Type: application/json
 
 GET http://localhost:4004/odata/v4/main/SalesOrderHeaders?$expand=items,customer
 Content-Type: application/json
+
+
+###
+
+
+#Selecionar somente customer e id do sales order harder
+
+GET http://localhost:4004/odata/v4/main/SalesOrderHeaders?$select=customer&$expand=customer($select=email)
+Content-Type: application/json
