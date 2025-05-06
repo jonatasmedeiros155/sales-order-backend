@@ -32,3 +32,11 @@ Content-Type: application/json
 {
     "firstName": "John"
 }
+
+###
+
+
+# Ordenando dados com $orderby
+
+GET http://localhost:4004/odata/v4/main/Customers?$orderby=firstName desc,lastName desc
+Content-Type: application/json
