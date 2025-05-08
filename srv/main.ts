@@ -1,13 +1,14 @@
-import { Customer, Customers } from '@cds-models/sales';
+import { ResultsHandler, Service } from '@sap/cds'
+import { Customers } from '@cds-models/sales';
 
-const customer: Customer = {
-    email: 'teste@teste.com',
-    firstName: 'Jonatas',
-    lastName: 'Cardoso',
-    id: '1234'
-};
+export default (service: Service) => {
+    service.after('READ', 'Customers',(results: Customers) => {
+        results.forEach(customer => {
+            if (!customer.email?.includes('@')) {
+                customer.email = `${customer.email}@microsoft.com`;
+            }
+        })
+    });
+        
 
-const customers = [customer]
-const funcao = (variavel: string) =>console.log(variavel);
-
-funcao('1234');
+}
