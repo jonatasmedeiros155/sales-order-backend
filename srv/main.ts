@@ -1,6 +1,6 @@
 import { Customer, Customers } from '@cds-models/sales';
 
-const customer: Customers = {
+const customer: Customer = {
     email: 'teste@teste.com',
     firstName: 'Jonatas',
     lastName: 'Cardoso',
